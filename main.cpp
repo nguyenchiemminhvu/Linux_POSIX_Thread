@@ -15,6 +15,7 @@ int main()
 
     pthread_t t;
     pthread_create(&t, NULL, PthreadSaysHello, NULL);
+    pthread_join(t, NULL);
 
     return 0;
 }
