@@ -8,7 +8,7 @@
 #include <limits.h>
 #include <pthread.h>
 
-#define MIN_DEC 0
+#define MIN_DEC -0xFFFFFFF
 #define MAX_INC 0xFFFFFFF
 
 pthread_mutex_t mutex_inc_dec;

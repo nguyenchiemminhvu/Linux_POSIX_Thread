@@ -83,7 +83,7 @@ int main()
 
     // ECHO(global_data);
 
-    SampleMutex();
+    //SampleMutex();
     SampleCondVar();
     SampleSema();
 
