@@ -39,6 +39,8 @@ void SampleSema()
     {
         pthread_join(t[i], NULL);
     }
+
+    sem_destroy(&sem_common);
 }
 
 #endif // __SAMPLE_SEMA_H__
