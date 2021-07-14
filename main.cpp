@@ -1,7 +1,3 @@
-#include <unistd.h>
-#include <pthread.h>
-#include <stdio.h>
-
 #include "sample_mutex.h"
 #include "sample_condvar.h"
 #include "sample_sema.h"
