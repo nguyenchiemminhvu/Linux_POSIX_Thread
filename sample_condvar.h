@@ -7,6 +7,8 @@
 #include <stdio.h>
 #include <pthread.h>
 
+extern int global_data;
+
 void SampleCondVar()
 {
     
