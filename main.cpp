@@ -84,7 +84,7 @@ int main()
     // ECHO(global_data);
 
     //SampleMutex();
-    SampleCondVar();
+    //SampleCondVar();
     SampleSema();
 
     return 0;
