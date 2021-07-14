@@ -9,7 +9,7 @@
 #include <pthread.h>
 
 #define MIN_DEC 0
-#define MAX_INC 0xFFFFFFFF
+#define MAX_INC 0xFFFFFFF
 
 pthread_mutex_t mutex_inc_dec;
 pthread_cond_t cond_increase;
@@ -42,7 +42,7 @@ void * DecreaseGlobalData(void * arg)
     pthread_mutex_lock(&mutex_inc_dec);
     while (true)
     {
-        while (global_data >= MIN_DEC)
+        while (global_data <= MIN_DEC)
         {
             pthread_cond_wait(&cond_decrease, &mutex_inc_dec);
         }
@@ -62,7 +62,6 @@ void * ViewGlobalData(void * arg)
     while (true)
     {
         printf("%d\n", global_data);
-        sleep(1);
     }
 }
 
